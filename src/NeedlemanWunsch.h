@@ -3,7 +3,7 @@
 #include <vector>
 #include <map>
 #include <string>
-#include "../matrixes/Scoring_Matrix.h"
+#include "../Matrixes/Scoring_Matrix.h"
 
 
 class NeedlemanWunsch {
