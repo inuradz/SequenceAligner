@@ -4,12 +4,12 @@
 #include <string>
 
 class Alignment_Result {
-    std::string seq_a;
-    std::string seq_b;
-    int score;
 
     public:
-        Alignment_Result(std::string,std::string,int);
+        std::string seq_a;
+        std::string seq_b;
+        int score;
+        Alignment_Result(std::string a,std::string b,int s):seq_a{a},seq_b{b},score(s){};
 };
 
 #endif ALIGNMENT_RESULT
