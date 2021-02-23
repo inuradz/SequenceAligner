@@ -74,6 +74,7 @@ int main(){
             futures.push_back(std::async(getRow,i+k,inputs,n));
         }
         for (k = 0; k < max_thread && (i+k) < inputs.size();k++){
+			std::cout << i + k << std::endl;
             std::vector<float> f = futures[k].get();
             for (j = 0; j < f.size();j++){
                 
